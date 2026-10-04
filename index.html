@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Wifey — 5 Months</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0612;--panel:#160d22;--panel2:#21112f;--purple:#8e5cff;--pink:#ff5da2;--gold:#ffd58a;--text:#fff8ff;--muted:#c9b9d6;--line:#ffffff18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 20% 10%,#3c165b55,transparent 35%),radial-gradient(circle at 90% 20%,#8c2d6b33,transparent 30%),var(--bg);color:var(--text);font-family:Manrope,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:42px 42px}
+a{color:inherit;text-decoration:none}.hide{display:none!important}.wrap{width:min(1120px,92%);margin:auto}
+nav{position:fixed;z-index:50;left:50%;transform:translateX(-50%);top:16px;width:min(720px,92%);padding:10px 14px;border:1px solid var(--line);background:#10091bcc;backdrop-filter:blur(18px);border-radius:999px;display:flex;justify-content:center;gap:6px;box-shadow:0 15px 50px #0006}
+nav a{padding:9px 13px;border-radius:999px;color:#dbcde7;font-size:12px;font-weight:700}nav a:hover{background:#ffffff12;color:#fff}
+section{min-height:100vh;padding:120px 0 80px;position:relative}.hero{display:grid;place-items:center;text-align:center;min-height:100svh;padding-top:80px}
+.kicker{color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-size:11px;font-weight:800}.hero h1{font:italic 7vw "DM Serif Display",serif;line-height:.9;margin:18px 0;background:linear-gradient(120deg,#fff,#ffd2e7 45%,#a88cff);-webkit-background-clip:text;color:transparent}.hero p{max-width:680px;margin:20px auto;color:var(--muted);line-height:1.8}.btn{border:0;color:white;background:linear-gradient(100deg,var(--purple),var(--pink));padding:14px 20px;border-radius:999px;font-weight:800;cursor:pointer;box-shadow:0 10px 35px #8e5cff44;transition:.25s}.btn:hover{transform:translateY(-2px) scale(1.02)}
+.scroll{margin-top:55px;color:#9f8aaa;font-size:12px}.scroll span{display:block;margin:8px auto;width:1px;height:40px;background:linear-gradient(var(--pink),transparent)}
+.title{text-align:center;margin-bottom:45px}.title h2{font:italic 48px "DM Serif Display",serif;margin:10px 0}.title p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#ffffff09,#ffffff03);border:1px solid var(--line);border-radius:24px;padding:25px;box-shadow:0 25px 70px #0004}.card h3{margin-top:0}.card p{color:var(--muted);line-height:1.75}.icon{font-size:35px;margin-bottom:15px}
+.timeline{max-width:760px;margin:auto;display:grid;gap:14px}.moment{padding:22px;border-left:2px solid var(--purple);background:#ffffff06;border-radius:0 18px 18px 0}.moment b{color:var(--gold);font-size:12px}.moment p{color:var(--muted);line-height:1.7}
+.game{max-width:760px;margin:auto;text-align:center}.gamebox{padding:30px;background:#ffffff08;border:1px solid var(--line);border-radius:28px}.choices{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:20px 0}.choice{padding:12px 18px;border:1px solid #ffffff20;background:#ffffff08;color:white;border-radius:14px;cursor:pointer}.choice:hover{background:#ffffff14}.feedback{min-height:26px;color:var(--gold);font-weight:700}
+#heartGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:420px;margin:22px auto}.tile{aspect-ratio:1;border:1px solid #ffffff18;background:#ffffff08;border-radius:15px;display:grid;place-items:center;font-size:28px;cursor:pointer}.tile.open{background:#8e5cff25}
+#word{font-size:36px;letter-spacing:.18em;color:#fff;margin:20px}.input{width:min(330px,90%);padding:14px 16px;background:#0e0816;border:1px solid #ffffff22;border-radius:14px;color:#fff;outline:none}
+.letter{max-width:800px;margin:auto;background:#fff9f033;border:1px solid #ffffff18;padding:38px;border-radius:30px;box-shadow:0 30px 90px #0006}.letter p{line-height:1.95;color:#eaddec}.signature{font:italic 30px "DM Serif Display";color:#ff9cc4}
+.proposal{min-height:100svh;display:grid;place-items:center;text-align:center}.proposal h2{font:italic 64px "DM Serif Display";margin:15px 0}.proposal .ring{font-size:80px;filter:drop-shadow(0 0 25px #ff80ba88)}.yesno{display:flex;justify-content:center;gap:14px;margin-top:25px}.no{background:#ffffff0b;box-shadow:none}.no:hover{transform:none}
+#final{display:none}.final-letter{animation:rise .8s ease both}@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.music{position:fixed;right:18px;bottom:18px;z-index:60}.music button{width:48px;height:48px;border-radius:50%;border:1px solid #fff3;background:#170c24dd;color:#fff;cursor:pointer;backdrop-filter:blur(15px)}
+.modal{position:fixed;inset:0;background:#050208dd;z-index:100;display:none;place-items:center;padding:20px}.modal.show{display:grid}.modalbox{width:min(560px,94%);background:#180d24;border:1px solid #ffffff20;border-radius:28px;padding:30px;text-align:center}.close{float:right;background:none;border:0;color:#aaa;font-size:24px}
+.confetti{position:fixed;z-index:90;width:8px;height:14px;top:-20px;animation:fall 3s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.hero h1{font-size:18vw}.title h2{font-size:39px}.proposal h2{font-size:48px}nav{overflow:auto;justify-content:flex-start}.card{padding:21px}section{padding-top:105px}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#start">Home</a><a href="#reasons">Why You</a><a href="#games">Games</a><a href="#letter">Letter</a><a href="#proposal">Forever?</a>
+</nav>
+
+<section id="start" class="hero">
+<div class="wrap">
+<div class="kicker">October 4 · Five Months</div>
+<h1>For my wifey,<br>my favorite person.</h1>
+<p>This isn't just a website. It's a tiny universe I made for you — because a normal “happy monthsary” could never fit everything I want to tell you.</p>
+<button class="btn" onclick="document.querySelector('#reasons').scrollIntoView()">Open your surprise ✦</button>
+<div class="scroll">keep scrolling<span></span></div>
+</div>
+</section>
+
+<section id="reasons">
+<div class="wrap">
+<div class="title"><div class="kicker">A little confession</div><h2>Things I love about you</h2><p>Some are serious. Some are ridiculously cute. All of them are you.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">💜</div><h3>Your heart</h3><p>You love deeply. Even when days get messy, the fact that you still choose us means more to me than you know.</p></div>
+<div class="card"><div class="icon">🌸</div><h3>Your softness</h3><p>There is something about your little reactions, your sweetness and the way you make ordinary conversations feel like home.</p></div>
+<div class="card"><div class="icon">🦆</div><h3>Your little world</h3><p>Your favorite things, your random thoughts, your food obsessions, your purple universe — I want to know all of it.</p></div>
+<div class="card"><div class="icon">🫶</div><h3>The way you choose</h3><p>You literally wrote that you're still choosing me. So here's my answer: I keep choosing you too.</p></div>
+<div class="card"><div class="icon">✨</div><h3>Our future</h3><p>When you talk about someday, I don't hear an empty promise. I hear a future I want to work toward with you.</p></div>
+<div class="card"><div class="icon">👑</div><h3>My princess</h3><p>Royal purple, lilies, laughter and that beautiful heart. Somehow you became one of the easiest people in the world to miss.</p></div>
+</div>
+</div>
+</section>
+
+<section id="journey">
+<div class="wrap">
+<div class="title"><div class="kicker">Our little timeline</div><h2>Five months in little pieces</h2></div>
+<div class="timeline">
+<div class="moment"><b>MONTH 01</b><p>Two people starting something that neither of us could fully predict.</p></div>
+<div class="moment"><b>MONTH 02</b><p>Learning each other's moods, habits, little jokes and the things that make us smile.</p></div>
+<div class="moment"><b>MONTH 03</b><p>More memories, more calls, more “I wish you were here” moments.</p></div>
+<div class="moment"><b>MONTH 04</b><p>Growing through the imperfect days — because real love isn't only the easy days.</p></div>
+<div class="moment"><b>MONTH 05</b><p>And now here we are. Still choosing. Still learning. Still imagining “someday.”</p></div>
+</div>
+</div>
+</section>
+
+<section id="games">
+<div class="wrap">
+<div class="title"><div class="kicker">Wifey Arcade</div><h2>Before the final surprise…</h2><p>You've got to earn your way to the question 😌</p></div>
+
+<div class="game" style="margin-bottom:55px">
+<div class="gamebox">
+<h3>🎯 Game 1 — How well do you know us?</h3>
+<p id="quizQ">Which color owns this website?</p>
+<div class="choices" id="quizChoices"></div><div class="feedback" id="quizFeedback"></div>
+</div></div>
+
+<div class="game" style="margin-bottom:55px">
+<div class="gamebox">
+<h3>🧩 Game 2 — Unlock the purple heart</h3>
+<p>Find the two matching hearts. Tap tiles.</p>
+<div id="heartGrid"></div><div class="feedback" id="memoryFeedback"></div>
+</div></div>
+
+<div class="game">
+<div class="gamebox">
+<h3>🔐 Game 3 — The secret word</h3>
+<p>Unscramble the letters. Hint: what I call the girl who owns my heart.</p>
+<div id="word">F E I W Y</div>
+<input id="secretInput" class="input" placeholder="type the word…">
+<button class="btn" onclick="checkWord()" style="margin-left:7px">Unlock</button>
+<div class="feedback" id="wordFeedback"></div>
+</div></div>
+</div>
+</section>
+
+<section id="letter">
+<div class="wrap">
+<div class="title"><div class="kicker">Open slowly</div><h2>A letter I wrote for you</h2></div>
+<div class="letter">
+<p>My wifey,</p>
+<p>When I read your monthsary message, I kept thinking about one sentence: <b>“here I am still choosing you.”</b> I want you to know that sentence landed somewhere deep in me.</p>
+<p>Five months isn't forever yet. But it is five months of choosing, learning, missing, laughing, overthinking, reassuring, growing and making memories. And I don't want perfect love. I want the kind where we keep coming back to each other and keep becoming better for each other.</p>
+<p>You said you imagine our future. I do too. I imagine the day distance isn't a screen anymore. I imagine holding your hand, annoying you in person, stealing your food, making you laugh when you don't want to, and finally getting to say “I love you” without a call ending between us.</p>
+<p>And your birthday is coming. Your 20th. So yes, this month is going to be busy for me — but somewhere inside all the chaos, there will always be a little space that belongs to you.</p>
+<p>You don't have to know every version of my past. You only need to know that I want to be intentional about the version of me you meet in our future.</p>
+<p>Thank you for choosing me. Thank you for loving me even when I'm not the easiest person to love. And thank you for giving me another month to prove that my words aren't just words.</p>
+<p>There is one more thing I want to ask you.</p>
+<p class="signature">But you have to reach the end. 💜</p>
+</div>
+</div>
+</section>
+
+<section id="proposal" class="proposal">
+<div class="wrap">
+<div class="ring">💍</div>
+<div class="kicker">The final question</div>
+<h2>Will you keep choosing me?</h2>
+<p style="color:var(--muted);max-width:600px;margin:auto;line-height:1.8">Not just for the pretty days. For the weird days, busy days, quiet days, distance days, laughing-until-we-can't-breathe days — all of them.</p>
+<div class="yesno">
+<button class="btn" onclick="sayYes()">YES. Always. 💜</button>
+<button class="btn no" id="noBtn" onclick="moveNo()">hmm… let me think</button>
+</div>
+</div>
+</section>
+
+<section id="final">
+<div class="wrap">
+<div class="title"><div class="kicker">She said YES</div><h2>Then this is yours.</h2></div>
+<div class="letter final-letter">
+<p>My beautiful wifey,</p>
+<p>If you clicked YES, then I have only one thing left to say:</p>
+<p><b>I choose you.</b></p>
+<p>I choose you when we're laughing. I choose you when we're confused. I choose you when distance makes everything harder. I choose you when I have to learn how to love you better. I choose you because somewhere along the way, “you and me” stopped sounding like an idea and started feeling like home.</p>
+<p>I don't know every detail of our future yet. But I know the person I want beside me while we discover it.</p>
+<p>So here's my little monthsary promise: I will keep putting in the effort. I will keep learning you. I will keep making room for you. And when life gets loud, I will remember that the girl behind this screen is someone worth choosing again and again.</p>
+<p>Five months down. So many more memories waiting.</p>
+<p class="signature">Happy 5th Monthsary, my love. 💜<br>Forever your future husband,<br>Jonathan</p>
+</div>
+</div>
+</section>
+
+<div class="music"><button onclick="toggleMusic()" id="musicBtn">♫</button></div>
+<div class="modal" id="modal"><div class="modalbox"><button class="close" onclick="closeModal()">×</button><div style="font-size:50px">🌸</div><h2>For you, wifey.</h2><p style="color:var(--muted);line-height:1.8">This little flower is a reminder that I don't need a special occasion to choose you.</p><button class="btn" onclick="closeModal()">Keep exploring</button></div></div>
+
+<script>
+const quiz=[
+["Which color owns this website?",["Royal purple","Neon green","Orange"],0],
+["Which flower do you love?",["Rose","Lily","Sunflower"],1],
+["What are we celebrating?",["5th monthsary","10th anniversary","First date"],0],
+["What am I secretly hoping for at the end?",["A pizza","A YES","A nap"],1]
+];
+let qi=0;
+function renderQuiz(){
+ let q=quiz[qi]; document.getElementById("quizQ").textContent=q[0];
+ document.getElementById("quizChoices").innerHTML=q[1].map((x,i)=>`<button class="choice" onclick="answer(${i})">${x}</button>`).join("");
+}
+function answer(i){
+ let q=quiz[qi], f=document.getElementById("quizFeedback");
+ if(i===q[2]){f.textContent="Correct 💜";qi=(qi+1)%quiz.length;setTimeout(renderQuiz,500)}
+ else f.textContent="Nope 😭 try again, wifey!";
+}
+renderQuiz();
+
+let cards=["💜","💜","🌸","🌙","🦆","✨","👑","💫"]; cards=cards.sort(()=>Math.random()-.5);
+let first=null,lock=false,matches=0;
+document.getElementById("heartGrid").innerHTML=cards.map((x,i)=>`<button class="tile" onclick="flip(${i})" id="tile${i}">?</button>`).join("");
+function flip(i){
+ if(lock||document.getElementById("tile"+i).classList.contains("open"))return;
+ let t=document.getElementById("tile"+i);t.textContent=cards[i];t.classList.add("open");
+ if(first===null){first=i;return}
+ if(cards[first]===cards[i]){matches++;first=null;if(matches===4){document.getElementById("memoryFeedback").textContent="Unlocked! You found all the little pieces. 💜";}}
+ else{lock=true;let a=first;setTimeout(()=>{document.getElementById("tile"+a).textContent="?";document.getElementById("tile"+a).classList.remove("open");t.textContent="?";t.classList.remove("open");first=null;lock=false},650)}
+}
+function checkWord(){
+ let v=document.getElementById("secretInput").value.trim().toLowerCase();
+ document.getElementById("wordFeedback").textContent=(v==="wifey"||v==="wife")?"SECRET UNLOCKED 💜 Now you're ready for the final question.":"Close… try again 😌";
+}
+let noClicks=0;
+function moveNo(){
+ noClicks++;let b=document.getElementById("noBtn");
+ if(noClicks<4){b.style.position="relative";b.style.left=(Math.random()*180-90)+"px";b.style.top=(Math.random()*80-40)+"px";b.textContent=["wait…","are you sure?","really?","okay okay 😭"][noClicks]}
+ else {b.textContent="fine, press YES 😭";b.onclick=sayYes;}
+}
+function sayYes(){
+ document.getElementById("final").style.display="block";
+ for(let i=0;i<90;i++){let c=document.createElement("i");c.className="confetti";c.style.left=Math.random()*100+"vw";c.style.animationDelay=Math.random()*1.2+"s";c.style.background=["#ff5da2","#8e5cff","#ffd58a","#fff"][Math.floor(Math.random()*4)];document.body.appendChild(c);setTimeout(()=>c.remove(),4000)}
+ document.getElementById("final").scrollIntoView({behavior:"smooth"});
+}
+function toggleMusic(){
+ if(!window.audioCtx){window.audioCtx=new (window.AudioContext||window.webkitAudioContext)();window.musicOn=false}
+ window.musicOn=!window.musicOn;
+ if(window.musicOn){startAmbient();document.getElementById("musicBtn").textContent="Ⅱ"}else{stopAmbient();document.getElementById("musicBtn").textContent="♫"}
+}
+let nodes=[];
+function startAmbient(){
+ const ctx=window.audioCtx;
+ const master=ctx.createGain();master.gain.value=.045;master.connect(ctx.destination);nodes.push(master);
+ const notes=[261.63,329.63,392,523.25,392,329.63];
+ notes.forEach((freq,i)=>{let o=ctx.createOscillator(),g=ctx.createGain();o.type="sine";o.frequency.value=freq;o.connect(g);g.connect(master);g.gain.value=0;let t=ctx.currentTime+i*.55;g.gain.linearRampToValueAtTime(.7,t+.08);g.gain.exponentialRampToValueAtTime(.001,t+.5);o.start(t);o.stop(t+.55);});
+ window.ambientLoop=setInterval(()=>{if(window.musicOn)startAmbient()},3300);
+}
+function stopAmbient(){nodes.forEach(n=>n.disconnect());nodes=[];clearInterval(window.ambientLoop)}
+setTimeout(()=>document.getElementById("modal").classList.add("show"),4500);
+function closeModal(){document.getElementById("modal").classList.remove("show")}
+</script>
+</body>
+</html>
